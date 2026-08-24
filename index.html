@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyber Defense Daily — Field Index</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f3f4f2;
+    --paper-2:#eaebe6;
+    --line:#d3d6cf;
+    --navy:#0d1f3c;
+    --navy-2:#152c52;
+    --navy-3:#22406f;
+    --ink:#1c2534;
+    --muted:#5b6478;
+    --stamp:#9c2b26;
+    --stamp-dim:#c98f8c;
+    --white:#ffffff;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+
+  body{
+    background:var(--paper);
+    background-image:
+      radial-gradient(var(--line) 0.6px, transparent 0.6px);
+    background-size:22px 22px;
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    min-height:100vh;
+  }
+
+  a{color:inherit;}
+
+  /* ---------------- HEADER ---------------- */
+  .letterhead{
+    background:var(--navy);
+    background-image:linear-gradient(180deg, var(--navy-2), var(--navy));
+    color:var(--white);
+    padding:38px 20px 26px;
+    position:relative;
+    border-bottom:3px solid var(--navy-3);
+  }
+  .letterhead-inner{
+    max-width:640px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
+  .crest{
+    width:52px;height:52px;
+    border:1.5px solid rgba(255,255,255,0.35);
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    margin-bottom:14px;
+  }
+  .crest svg{width:24px;height:24px;stroke:var(--white);fill:none;stroke-width:1.5;}
+
+  .brand{
+    font-family:'Source Serif 4',serif;
+    font-weight:700;
+    font-size:26px;
+    letter-spacing:0.01em;
+  }
+  .brand .dim{color:rgba(255,255,255,0.55);font-weight:500;}
+
+  .handle-line{
+    margin-top:6px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:rgba(255,255,255,0.55);
+  }
+
+  .tagline{
+    margin-top:14px;
+    font-size:14.5px;
+    color:rgba(255,255,255,0.8);
+    max-width:380px;
+    line-height:1.55;
+  }
+
+  .classification{
+    margin-top:18px;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10.5px;
+    letter-spacing:0.12em;
+    padding:6px 12px;
+    border:1px solid rgba(255,255,255,0.25);
+    border-radius:3px;
+    color:rgba(255,255,255,0.75);
+  }
+  .classification b{color:var(--white);font-weight:600;}
+
+  .socials{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+  }
+  .social-btn{
+    width:34px;height:34px;
+    border-radius:6px;
+    border:1px solid rgba(255,255,255,0.25);
+    display:flex;align-items:center;justify-content:center;
+    color:rgba(255,255,255,0.75);
+    text-decoration:none;
+    transition:border-color .15s ease, color .15s ease, background .15s ease;
+  }
+  .social-btn:hover{border-color:var(--white);color:var(--white);background:rgba(255,255,255,0.08);}
+  .social-btn svg{width:15px;height:15px;fill:currentColor;}
+
+  /* ---------------- INDEX LABEL ---------------- */
+  .index-row{
+    max-width:640px;
+    margin:34px auto 16px;
+    padding:0 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    font-family:'IBM Plex Mono',monospace;
+  }
+  .index-row .label{
+    font-size:11px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--muted);
+  }
+  .index-row .count{
+    font-size:11px;
+    color:var(--muted);
+  }
+
+  /* ---------------- GRID ---------------- */
+  .grid{
+    max-width:640px;
+    margin:0 auto;
+    padding:0 20px 60px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+  }
+  @media (max-width:520px){
+    .grid{grid-template-columns:1fr;}
+  }
+
+  .card{
+    display:block;
+    text-decoration:none;
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:2px;
+    overflow:hidden;
+    position:relative;
+    box-shadow:0 1px 0 rgba(13,31,60,0.03);
+    transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  }
+  .card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 22px rgba(13,31,60,0.12);
+    border-color:var(--navy-3);
+  }
+  .card:focus-visible{outline:2px solid var(--navy-3);outline-offset:2px;}
+
+  .photo-wrap{
+    position:relative;
+    aspect-ratio:1/1;
+    overflow:hidden;
+    background:var(--navy);
+  }
+  .photo-wrap img{
+    width:100%;height:100%;
+    object-fit:cover;
+    display:block;
+    transition:transform .4s ease;
+  }
+  .card:hover .photo-wrap img{transform:scale(1.04);}
+
+  .photo-fallback{
+    position:absolute;inset:0;
+    display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(160deg,var(--navy-2),var(--navy));
+    color:rgba(255,255,255,0.3);
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    letter-spacing:0.1em;
+    text-align:center;
+    padding:12px;
+  }
+
+  .overlay{
+    position:absolute;inset:0;
+    background:linear-gradient(180deg, rgba(13,31,60,0) 55%, rgba(13,31,60,0.82) 100%);
+    display:flex;
+    align-items:flex-end;
+    justify-content:flex-end;
+    padding:10px;
+    opacity:0;
+    transition:opacity .18s ease;
+  }
+  .card:hover .overlay{opacity:1;}
+  .overlay span{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    color:var(--white);
+    letter-spacing:0.04em;
+  }
+
+  /* stamp ribbon */
+  .stamp{
+    position:absolute;
+    top:12px;
+    left:-30px;
+    background:transparent;
+    border:1.5px solid var(--stamp);
+    color:var(--stamp);
+    font-family:'IBM Plex Mono',monospace;
+    font-weight:700;
+    font-size:9.5px;
+    letter-spacing:0.09em;
+    padding:3px 30px;
+    transform:rotate(-8deg);
+    text-transform:uppercase;
+    background:rgba(243,244,242,0.92);
+    mix-blend-mode:multiply;
+  }
+
+  .info{
+    padding:10px 12px 12px;
+    border-top:1px solid var(--line);
+  }
+  .info-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10px;
+    color:var(--muted);
+    margin-bottom:5px;
+    letter-spacing:0.04em;
+  }
+  .info-top .case{color:var(--navy-3);font-weight:600;}
+
+  .info-title{
+    font-size:13.5px;
+    font-weight:600;
+    color:var(--ink);
+    line-height:1.35;
+  }
+
+  /* ---------------- FOOTER ---------------- */
+  .footer{
+    background:var(--navy);
+    color:rgba(255,255,255,0.55);
+    text-align:center;
+    padding:22px 20px 26px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10.5px;
+    letter-spacing:0.08em;
+  }
+  .footer a{color:rgba(255,255,255,0.85);text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.3);}
+  .footer a:hover{color:var(--white);}
+
+  @media (prefers-reduced-motion: reduce){
+    .card, .photo-wrap img, .overlay{transition:none;}
+  }
+</style>
+</head>
+<body>
+
+  <header class="letterhead">
+    <div class="letterhead-inner">
+      <div class="crest">
+        <svg viewBox="0 0 24 24"><path d="M12 2 3 6v6c0 5 3.8 9.3 9 10 5.2-.7 9-5 9-10V6l-9-4Z"/><path d="M9 12.5l2 2 4-4.2"/></svg>
+      </div>
+      <div class="brand">Cyber Defense <span class="dim">Daily</span></div>
+      <div class="handle-line">@cyber.defense.daily</div>
+    </div>
+  </header>
+
+  <div class="index-row">
+    <span class="label">Field index — latest first</span>
+    <span class="count">4 files</span>
+  </div>
+
+  <div class="grid">
+
+    <!--
+      EACH CARD = ONE INSTAGRAM POST.
+      - Swap data-fallback text or replace <img src> with your real post image.
+      - Swap href to the article URL.
+      - "case" = your own numbering scheme, doesn't have to mean anything.
+    -->
+
+    <a class="card" href="https://cyberdefensedaily.org/30-2/" target="_blank" rel="noopener">
+      <div class="stamp">Article</div>
+      <div class="photo-wrap">
+        <img src="ops-room.jpg" alt="" onerror="this.style.display='none'">
+        <div class="photo-fallback">POST IMAGE<br>GOES HERE</div>
+      </div>
+      <div class="overlay"><span>→ read article</span></div>
+      <div class="info">
+        <div class="info-top"><span class="case">CDD-014</span><span>08.23.26</span></div>
+        <div class="info-title">Should the U.S. Have a Cyber Force?</div>
+      </div>
+    </a>
+
+    <a class="card" href="https://example.com/tutorial-1" target="_blank" rel="noopener">
+      <div class="stamp">Tutorial</div>
+      <div class="photo-wrap">
+        <img src="REPLACE_WITH_POST_IMAGE_URL_2.jpg" alt="" onerror="this.style.display='none'">
+        <div class="photo-fallback">POST IMAGE<br>GOES HERE</div>
+      </div>
+      <div class="overlay"><span>→ read tutorial</span></div>
+      <div class="info">
+        <div class="info-top"><span class="case">CDD-013</span><span>08.21.26</span></div>
+        <div class="info-title">Replace with your tutorial title</div>
+      </div>
+    </a>
+
+    <a class="card" href="https://example.com/news-1" target="_blank" rel="noopener">
+      <div class="stamp">News</div>
+      <div class="photo-wrap">
+        <img src="REPLACE_WITH_POST_IMAGE_URL_3.jpg" alt="" onerror="this.style.display='none'">
+        <div class="photo-fallback">POST IMAGE<br>GOES HERE</div>
+      </div>
+      <div class="overlay"><span>→ read source</span></div>
+      <div class="info">
+        <div class="info-top"><span class="case">CDD-012</span><span>08.19.26</span></div>
+        <div class="info-title">Replace with the news headline</div>
+      </div>
+    </a>
+
+    <a class="card" href="https://example.com/meme-1" target="_blank" rel="noopener">
+      <div class="stamp">Meme</div>
+      <div class="photo-wrap">
+        <img src="REPLACE_WITH_POST_IMAGE_URL_4.jpg" alt="" onerror="this.style.display='none'">
+        <div class="photo-fallback">POST IMAGE<br>GOES HERE</div>
+      </div>
+      <div class="overlay"><span>→ view post</span></div>
+      <div class="info">
+        <div class="info-top"><span class="case">CDD-011</span><span>08.18.26</span></div>
+        <div class="info-title">Replace with the meme's context/caption</div>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="footer">
+    file continues on <a href="https://instagram.com/cyber.defense.daily" target="_blank" rel="noopener">instagram →</a>
+  </div>
+
+</body>
+</html>
