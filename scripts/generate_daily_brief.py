@@ -95,12 +95,24 @@ def generate_brief() -> dict:
     raw_text = re.sub(r"^```(?:json)?\s*", "", raw_text)
     raw_text = re.sub(r"\s*```$", "", raw_text)
 
-    try:
-        data = json.loads(raw_text)
-    except json.JSONDecodeError as e:
-        print("Failed to parse model output as JSON.", file=sys.stderr)
+    # Be defensive: the model may still add a sentence of commentary before
+    # or after the JSON object despite instructions not to. Extract just the
+    # outermost {...} block instead of assuming the whole string is clean JSON.
+    start = raw_text.find("{")
+    end = raw_text.rfind("}")
+    if start == -1 or end == -1 or end < start:
+        print("No JSON object found in model output.", file=sys.stderr)
         print("Raw output was:", file=sys.stderr)
         print(raw_text, file=sys.stderr)
+        raise ValueError("Model output did not contain a JSON object.")
+    json_text = raw_text[start : end + 1]
+
+    try:
+        data = json.loads(json_text)
+    except json.JSONDecodeError as e:
+        print("Failed to parse extracted JSON.", file=sys.stderr)
+        print("Extracted text was:", file=sys.stderr)
+        print(json_text, file=sys.stderr)
         raise e
 
     return data
