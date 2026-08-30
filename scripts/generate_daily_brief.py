@@ -190,7 +190,7 @@ def render_html(data: dict, date_str: str, case_number: str) -> str:
         {sources_html}
       </div>
     </article>
-    <a class="back-link" href="/daily/">&larr; All daily briefs</a>
+    <a class="back-link" href="./">&larr; All daily briefs</a>
   </main>
 </body>
 </html>
@@ -224,7 +224,7 @@ def rebuild_index():
         m = re.search(r"<h1>(.*?)</h1>", content)
         headline = m.group(1) if m else date_str
         rows += f"""
-      <a class="brief-row" href="/daily/{f.name}">
+      <a class="brief-row" href="{f.name}">
         <span class="brief-date">{pretty}</span>
         <span class="brief-headline">{headline}</span>
       </a>"""
