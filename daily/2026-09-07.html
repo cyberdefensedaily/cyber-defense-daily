@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI agents breach enterprise in 10 hours; SonicWall and Chrome zero-days exploited — Cyber Defense Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f3f4f2; --line:#d3d6cf; --navy:#0d1f3c; --navy-2:#152c52;
+    --navy-3:#22406f; --ink:#1c2534; --muted:#5b6478; --stamp:#9c2b26;
+    --ai-accent:#8a6a1f; --ai-bg:#fbf3df; --white:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;}
+  a{color:var(--navy-3);}
+  .letterhead{background:linear-gradient(180deg,var(--navy-2),var(--navy));color:var(--white);padding:28px 20px;text-align:center;border-bottom:3px solid var(--navy-3);}
+  .letterhead .brand{font-family:'Source Serif 4',serif;font-weight:700;font-size:19px;}
+  .letterhead .brand .dim{color:rgba(255,255,255,0.55);font-weight:500;}
+  .letterhead .handle{margin-top:4px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);}
+  main{max-width:680px;margin:0 auto;padding:44px 20px 70px;}
+  .meta-row{display:flex;justify-content:space-between;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+  .meta-row .case{color:var(--navy-3);font-weight:600;}
+  .ai-badge{display:inline-flex;align-items:center;gap:8px;background:var(--ai-bg);border:1px solid var(--ai-accent);color:var(--ai-accent);font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;margin-bottom:24px;}
+  h1{font-family:'Source Serif 4',serif;font-weight:700;font-size:clamp(26px,4.5vw,36px);line-height:1.2;color:var(--navy);margin-bottom:10px;}
+  .dek{font-size:16.5px;color:var(--muted);line-height:1.55;margin-bottom:30px;}
+  article{font-size:16.5px;line-height:1.72;color:var(--ink);}
+  article h2{font-family:'Source Serif 4',serif;font-weight:600;font-size:21px;color:var(--navy);margin:34px 0 12px;padding-top:22px;border-top:1px solid var(--line);}
+  article p{margin-bottom:18px;}
+  .sources{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);line-height:1.9;}
+  .sources .label{display:block;color:var(--navy-3);font-weight:600;margin-bottom:8px;letter-spacing:0.06em;}
+  .back-link{display:block;margin-top:40px;font-family:'IBM Plex Mono',monospace;font-size:12px;}
+</style>
+</head>
+<body>
+  <header class="letterhead">
+    <div class="brand">Cyber Defense <span class="dim">Daily</span></div>
+    <div class="handle">@cyber.defense.daily</div>
+  </header>
+  <main>
+    <div class="meta-row">
+      <span class="case">CDD-DAILY-0008</span>
+      <span>September 07, 2026</span>
+    </div>
+    <div class="ai-badge">&#9679; AI-Generated &middot; Human-Reviewed</div>
+    <h1>AI agents breach enterprise in 10 hours; SonicWall and Chrome zero-days exploited</h1>
+    <p class="dek">Frontier AI models accelerate attacks while critical infrastructure devices face active exploitation</p>
+    <article>
+      
+      <h2>AI agents breach enterprise network in under 10 hours</h2>
+      <p>A human attacker used frontier AI models to fully compromise an enterprise network and steal root credentials in under 10 hours, a process that normally takes human operators roughly two weeks. Palo Alto Networks Unit 42 reported the AI agents handled reconnaissance, credential scraping, secret-management compromise, and pivoting across cloud and container environments autonomously. The incident represents one of the first well-documented cases of AI-driven intrusion at scale. [1]</p>
+
+      <h2>SonicWall SMA1000 critical vulnerabilities exploited in the wild</h2>
+      <p>SonicWall disclosed two actively exploited vulnerabilities in SMA1000 appliances on September 1. CVE-2026-83548, a pre-authentication SSRF flaw with a CVSS score of 10.0, can be chained with CVE-2026-83549, an OS command injection bug, to achieve unauthenticated remote code execution. CISA added both flaws to its Known Exploited Vulnerabilities catalog on September 2 with a federal remediation deadline of September 5. [2]</p>
+
+      <h2>Google patches sixth Chrome zero-day of 2026</h2>
+      <p>Google released Chrome 152.0.7977.82 on September 4 to fix CVE-2026-85046, a type confusion vulnerability in the V8 JavaScript engine that is actively exploited in the wild. The flaw allows remote code execution inside the sandbox via a crafted HTML page and carries a CVSS score of 8.8. CISA added the vulnerability to its KEV catalog on September 4, requiring federal agencies to patch by September 18. [3]</p>
+
+      <h2>PaperCut zero-day chain exploited to target education sector</h2>
+      <p>Threat actors are exploiting CVE-2026-81578 and CVE-2026-82078, an authentication bypass and remote code execution chain in PaperCut NG and MF servers, to target education institutions in the U.S. and Europe. Arctic Wolf observed attackers conducting reconnaissance, creating privileged accounts, and harvesting credentials. PaperCut released an emergency patch on September 1 after confirming customer incidents. [4]</p>
+
+      <h2>Unpatched Magento zero-day under active exploitation</h2>
+      <p>Attackers are exploiting an unpatched zero-day in Magento Open Source and Adobe Commerce to execute arbitrary code on online store servers without authentication. Dutch security firm Sansec, which discovered the flaw and named it StyleSmuggler, said attacks began on September 4 and published early because stores are being compromised in real time. As of September 6, Adobe had not released a patch. [5]</p>
+
+      <div class="sources">
+        <span class="label">Sources</span>
+        [1] Palo Alto Networks Unit 42 &mdash; <a href="https://cyberrecaps.com/news/cybersecurity-news-september-04-2026" target="_blank" rel="noopener">https://cyberrecaps.com/news/cybersecurity-news-september-04-2026</a><br>
+        [2] Rapid7 &mdash; <a href="https://www.rapid7.com/blog/post/etr-critical-sonicwall-sma1000-vulnerabilities-cve-2026-83548-cve-2026-83549-exploited-in-the-wild/" target="_blank" rel="noopener">https://www.rapid7.com/blog/post/etr-critical-sonicwall-sma1000-vulnerabilities-cve-2026-83548-cve-2026-83549-exploited-in-the-wild/</a><br>
+        [3] The Hacker News &mdash; <a href="https://thehackernews.com/2026/09/google-releases-chrome-update-to-patch.html" target="_blank" rel="noopener">https://thehackernews.com/2026/09/google-releases-chrome-update-to-patch.html</a><br>
+        [4] The Hacker News &mdash; <a href="https://thehackernews.com/" target="_blank" rel="noopener">https://thehackernews.com/</a><br>
+        [5] The Hacker News &mdash; <a href="https://thehackernews.com/" target="_blank" rel="noopener">https://thehackernews.com/</a><br>
+        
+      </div>
+    </article>
+    <a class="back-link" href="./">&larr; All daily briefs</a>
+  </main>
+</body>
+</html>
