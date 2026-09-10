@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Record Microsoft patches, Adobe zero-day, Chrome exploit mark heavy week — Cyber Defense Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f3f4f2; --line:#d3d6cf; --navy:#0d1f3c; --navy-2:#152c52;
+    --navy-3:#22406f; --ink:#1c2534; --muted:#5b6478; --stamp:#9c2b26;
+    --ai-accent:#8a6a1f; --ai-bg:#fbf3df; --white:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;}
+  a{color:var(--navy-3);}
+  .letterhead{background:linear-gradient(180deg,var(--navy-2),var(--navy));color:var(--white);padding:28px 20px;text-align:center;border-bottom:3px solid var(--navy-3);}
+  .letterhead .brand{font-family:'Source Serif 4',serif;font-weight:700;font-size:19px;}
+  .letterhead .brand .dim{color:rgba(255,255,255,0.55);font-weight:500;}
+  .letterhead .handle{margin-top:4px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);}
+  main{max-width:680px;margin:0 auto;padding:44px 20px 70px;}
+  .meta-row{display:flex;justify-content:space-between;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+  .meta-row .case{color:var(--navy-3);font-weight:600;}
+  .ai-badge{display:inline-flex;align-items:center;gap:8px;background:var(--ai-bg);border:1px solid var(--ai-accent);color:var(--ai-accent);font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;margin-bottom:24px;}
+  h1{font-family:'Source Serif 4',serif;font-weight:700;font-size:clamp(26px,4.5vw,36px);line-height:1.2;color:var(--navy);margin-bottom:10px;}
+  .dek{font-size:16.5px;color:var(--muted);line-height:1.55;margin-bottom:30px;}
+  article{font-size:16.5px;line-height:1.72;color:var(--ink);}
+  article h2{font-family:'Source Serif 4',serif;font-weight:600;font-size:21px;color:var(--navy);margin:34px 0 12px;padding-top:22px;border-top:1px solid var(--line);}
+  article p{margin-bottom:18px;}
+  .sources{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);line-height:1.9;}
+  .sources .label{display:block;color:var(--navy-3);font-weight:600;margin-bottom:8px;letter-spacing:0.06em;}
+  .back-link{display:block;margin-top:40px;font-family:'IBM Plex Mono',monospace;font-size:12px;}
+</style>
+</head>
+<body>
+  <header class="letterhead">
+    <div class="brand">Cyber Defense <span class="dim">Daily</span></div>
+    <div class="handle">@cyber.defense.daily</div>
+  </header>
+  <main>
+    <div class="meta-row">
+      <span class="case">CDD-DAILY-0010</span>
+      <span>September 10, 2026</span>
+    </div>
+    <div class="ai-badge">&#9679; AI-Generated &middot; Human-Reviewed</div>
+    <h1>Record Microsoft patches, Adobe zero-day, Chrome exploit mark heavy week</h1>
+    <p class="dek">974 CVEs from Microsoft, exploited e-commerce flaw, and Chrome's seventh 2026 zero-day</p>
+    <article>
+      
+      <h2>Microsoft ships record 974 CVEs in September Patch Tuesday</h2>
+      <p>Microsoft patched 974 vulnerabilities in its September update, including two zero-days actively exploited in the wild. The release broke prior records and spanned Windows, Office, SQL, and Azure products. CVE-2026-81963 affects the Windows Update Stack and CVE-2026-85880 targets the Advanced Local Procedure Call. [1]</p>
+
+      <h2>Adobe patches StyleSmuggler zero-day exploited since September 4</h2>
+      <p>CVE-2026-75650, a CVSS 10.0 unauthenticated remote code execution flaw in Adobe Commerce and Magento, was exploited for three days before Adobe released a hotfix on September 7. Attackers deployed Rust-based Linux backdoors and PHP web shells on vulnerable e-commerce servers. Adobe confirmed active exploitation and urged credential rotation in addition to patching. [2]</p>
+
+      <h2>Chrome V8 zero-day marks seventh exploit of 2026</h2>
+      <p>Google patched CVE-2026-87491, an out-of-bounds write vulnerability in Chrome's V8 engine, on September 8 after confirming active exploitation. The flaw allows arbitrary code execution inside the browser sandbox via a crafted HTML page. Four of 2026's seven Chrome zero-days have targeted V8 directly, signaling sustained adversary research into the JavaScript engine. [3]</p>
+
+      <h2>F5 BIG-IP APM malware injects fileless PHP web shell</h2>
+      <p>Attackers exploiting CVE-2025-53521 in F5 BIG-IP APM deployed PoisonedRefresh, a Linux rootkit that injects a PHP web shell directly into Apache process memory without altering files on disk. The malware modifies system binaries and embeds itself in upgrade images to survive device updates. More than 14,000 BIG-IP instances remain exposed globally months after patches became available. [4]</p>
+
+      <div class="sources">
+        <span class="label">Sources</span>
+        [1] The Cyber Express &mdash; <a href="https://thecyberexpress.com/patch-tuesday-september-2026/" target="_blank" rel="noopener">https://thecyberexpress.com/patch-tuesday-september-2026/</a><br>
+        [2] Tenable &mdash; <a href="https://www.tenable.com/blog/stylesmuggler-cve-2026-75650-frequently-asked-questions-about-adobe-commerce-and-magento-zero" target="_blank" rel="noopener">https://www.tenable.com/blog/stylesmuggler-cve-2026-75650-frequently-asked-questions-about-adobe-commerce-and-magento-zero</a><br>
+        [3] SOC Prime &mdash; <a href="https://socprime.com/blog/cve-2026-87491-chrome-v8-zero-day-exploited/" target="_blank" rel="noopener">https://socprime.com/blog/cve-2026-87491-chrome-v8-zero-day-exploited/</a><br>
+        [4] The Hacker News &mdash; <a href="https://thehackernews.com/2026/09/f5-big-ip-apm-malware-injects-php-web.html" target="_blank" rel="noopener">https://thehackernews.com/2026/09/f5-big-ip-apm-malware-injects-php-web.html</a><br>
+        
+      </div>
+    </article>
+    <a class="back-link" href="./">&larr; All daily briefs</a>
+  </main>
+</body>
+</html>
