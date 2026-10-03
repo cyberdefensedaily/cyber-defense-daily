@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pentagon Breach, Critical Zero-Days, and Cyber Command Overhaul — Cyber Defense Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f3f4f2; --line:#d3d6cf; --navy:#0d1f3c; --navy-2:#152c52;
+    --navy-3:#22406f; --ink:#1c2534; --muted:#5b6478; --stamp:#9c2b26;
+    --ai-accent:#8a6a1f; --ai-bg:#fbf3df; --white:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;}
+  a{color:var(--navy-3);}
+  .letterhead{background:linear-gradient(180deg,var(--navy-2),var(--navy));color:var(--white);padding:28px 20px;text-align:center;border-bottom:3px solid var(--navy-3);}
+  .letterhead .brand{font-family:'Source Serif 4',serif;font-weight:700;font-size:19px;}
+  .letterhead .brand .dim{color:rgba(255,255,255,0.55);font-weight:500;}
+  .letterhead .handle{margin-top:4px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);}
+  main{max-width:680px;margin:0 auto;padding:44px 20px 70px;}
+  .meta-row{display:flex;justify-content:space-between;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+  .meta-row .case{color:var(--navy-3);font-weight:600;}
+  .ai-badge{display:inline-flex;align-items:center;gap:8px;background:var(--ai-bg);border:1px solid var(--ai-accent);color:var(--ai-accent);font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;margin-bottom:24px;}
+  h1{font-family:'Source Serif 4',serif;font-weight:700;font-size:clamp(26px,4.5vw,36px);line-height:1.2;color:var(--navy);margin-bottom:10px;}
+  .dek{font-size:16.5px;color:var(--muted);line-height:1.55;margin-bottom:30px;}
+  article{font-size:16.5px;line-height:1.72;color:var(--ink);}
+  article h2{font-family:'Source Serif 4',serif;font-weight:600;font-size:21px;color:var(--navy);margin:34px 0 12px;padding-top:22px;border-top:1px solid var(--line);}
+  article p{margin-bottom:18px;}
+  .sources{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);line-height:1.9;}
+  .sources .label{display:block;color:var(--navy-3);font-weight:600;margin-bottom:8px;letter-spacing:0.06em;}
+  .back-link{display:block;margin-top:40px;font-family:'IBM Plex Mono',monospace;font-size:12px;}
+</style>
+</head>
+<body>
+  <header class="letterhead">
+    <div class="brand">Cyber Defense <span class="dim">Daily</span></div>
+    <div class="handle">@cyber.defense.daily</div>
+  </header>
+  <main>
+    <div class="meta-row">
+      <span class="case">CDD-DAILY-0014</span>
+      <span>October 03, 2026</span>
+    </div>
+    <div class="ai-badge">&#9679; AI-Generated &middot; Human-Reviewed</div>
+    <h1>Pentagon Breach, Critical Zero-Days, and Cyber Command Overhaul</h1>
+    <p class="dek">DoD data breach hits 3 million, Fortinet flaw exploited, mental health directive for cyber operators.</p>
+    <article>
+      
+      <h2>Pentagon Breach Exposed 3 Million Personnel Records Over Nine Months</h2>
+      <p>The Defense Manpower Data Center notified current and former military personnel that unauthorized users exploited a file-sharing vulnerability between October 2025 and July 2026, exposing Social Security numbers, names, dates of birth, and service records. The breach affects 2.76 million living individuals and approximately 294,000 deceased people. Details on attribution and the specific file-sharing system remain undisclosed. [1]</p>
+
+      <h2>CISA Flags Fortinet FortiMail Zero-Day Under Active Exploitation</h2>
+      <p>The agency added CVE-2026-104286, a critical path traversal flaw rated CVSS 9.8, to its Known Exploited Vulnerabilities catalog on October 1. The vulnerability allows unauthenticated attackers to write arbitrary files to FortiMail systems. Federal agencies face an October 4 remediation deadline under Binding Operational Directive 26-04. [2]</p>
+
+      <h2>Pentagon Orders Mental Health Overhaul at U.S. Cyber Command After Suicides</h2>
+      <p>The Department of Defense directed Cyber Command to appoint cleared behavioral health specialists, create a Cyber Resilience and Occupational Engagement Framework by mid-October, and review consecutive shift policies within 60 days. The directive follows multiple suicides within Cyber Command ranks. The 2026 NDAA authorized the changes but funding and staffing remain unclear. [3]</p>
+
+      <h2>Microsoft's X Account Hijacked for Clippy Crypto Scam</h2>
+      <p>Attackers compromised Microsoft's official X account with 13 million followers for approximately 30 minutes on October 1, changing the profile picture to Clippy and promoting a fraudulent cryptocurrency token. Microsoft confirmed unauthorized access and removed the posts. The company did not disclose the breach method; investigation continues. [4]</p>
+
+      <h2>GitLab Patches Critical AI Gateway Command Execution Flaw</h2>
+      <p>GitLab disclosed CVE-2026-90970, a critical vulnerability rated CVSS 9.9, allowing authenticated Duo Agent Platform users to execute arbitrary commands on self-hosted AI Gateway instances. Fixes are available in versions 19.2.4, 19.3.2, and 19.4.1. Only organizations hosting their own gateway are affected. [5]</p>
+
+      <div class="sources">
+        <span class="label">Sources</span>
+        [1] TechCrunch &mdash; <a href="https://techcrunch.com/2026/09/30/hackers-stole-millions-of-us-military-personnel-records-during-months-long-data-breach" target="_blank" rel="noopener">https://techcrunch.com/2026/09/30/hackers-stole-millions-of-us-military-personnel-records-during-months-long-data-breach</a><br>
+        [2] BleepingComputer &mdash; <a href="https://bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks" target="_blank" rel="noopener">https://bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks</a><br>
+        [3] Escudo Digital &mdash; <a href="https://escudodigital.com/en/cybersecurity/pentagon-demands-changes-at-us-cyber-command-following-suicides.html" target="_blank" rel="noopener">https://escudodigital.com/en/cybersecurity/pentagon-demands-changes-at-us-cyber-command-following-suicides.html</a><br>
+        [4] SecurityWeek &mdash; <a href="https://www.securityweek.com/crypto-scammers-hijack-microsofts-official-x-account/" target="_blank" rel="noopener">https://www.securityweek.com/crypto-scammers-hijack-microsofts-official-x-account/</a><br>
+        [5] The Hacker News &mdash; <a href="https://thehackernews.com/" target="_blank" rel="noopener">https://thehackernews.com/</a><br>
+        
+      </div>
+    </article>
+    <a class="back-link" href="./">&larr; All daily briefs</a>
+  </main>
+</body>
+</html>
