@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitLab ships critical patch, FBI seizes China tools, Microsoft fixes 1,413 flaws — Cyber Defense Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f3f4f2; --line:#d3d6cf; --navy:#0d1f3c; --navy-2:#152c52;
+    --navy-3:#22406f; --ink:#1c2534; --muted:#5b6478; --stamp:#9c2b26;
+    --ai-accent:#8a6a1f; --ai-bg:#fbf3df; --white:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;}
+  a{color:var(--navy-3);}
+  .letterhead{background:linear-gradient(180deg,var(--navy-2),var(--navy));color:var(--white);padding:28px 20px;text-align:center;border-bottom:3px solid var(--navy-3);}
+  .letterhead .brand{font-family:'Source Serif 4',serif;font-weight:700;font-size:19px;}
+  .letterhead .brand .dim{color:rgba(255,255,255,0.55);font-weight:500;}
+  .letterhead .handle{margin-top:4px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);}
+  main{max-width:680px;margin:0 auto;padding:44px 20px 70px;}
+  .meta-row{display:flex;justify-content:space-between;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+  .meta-row .case{color:var(--navy-3);font-weight:600;}
+  .ai-badge{display:inline-flex;align-items:center;gap:8px;background:var(--ai-bg);border:1px solid var(--ai-accent);color:var(--ai-accent);font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;margin-bottom:24px;}
+  h1{font-family:'Source Serif 4',serif;font-weight:700;font-size:clamp(26px,4.5vw,36px);line-height:1.2;color:var(--navy);margin-bottom:10px;}
+  .dek{font-size:16.5px;color:var(--muted);line-height:1.55;margin-bottom:30px;}
+  article{font-size:16.5px;line-height:1.72;color:var(--ink);}
+  article h2{font-family:'Source Serif 4',serif;font-weight:600;font-size:21px;color:var(--navy);margin:34px 0 12px;padding-top:22px;border-top:1px solid var(--line);}
+  article p{margin-bottom:18px;}
+  .sources{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);line-height:1.9;}
+  .sources .label{display:block;color:var(--navy-3);font-weight:600;margin-bottom:8px;letter-spacing:0.06em;}
+  .back-link{display:block;margin-top:40px;font-family:'IBM Plex Mono',monospace;font-size:12px;}
+</style>
+</head>
+<body>
+  <header class="letterhead">
+    <div class="brand">Cyber Defense <span class="dim">Daily</span></div>
+    <div class="handle">@cyber.defense.daily</div>
+  </header>
+  <main>
+    <div class="meta-row">
+      <span class="case">CDD-DAILY-0014</span>
+      <span>October 14, 2026</span>
+    </div>
+    <div class="ai-badge">&#9679; AI-Generated &middot; Human-Reviewed</div>
+    <h1>GitLab ships critical patch, FBI seizes China tools, Microsoft fixes 1,413 flaws</h1>
+    <p class="dek">Emergency fixes, law enforcement action, and unprecedented vulnerability volumes dominate the week.</p>
+    <article>
+      
+      <h2>GitLab patches CVSS 10.0 remote code execution flaw</h2>
+      <p>&lt;cite index="46-2,46-3"&gt;GitLab released emergency security updates on October 12, 2026 addressing CVE-2026-97229, a maximum-severity remote code execution vulnerability affecting self-managed GitLab Community and Enterprise Edition installations. The flaw has a CVSS score of 10.0 and could allow an unauthenticated remote attacker to execute arbitrary code on a vulnerable GitLab server under certain conditions.&lt;/cite&gt; &lt;cite index="46-4,46-5"&gt;The vulnerability resides in GitLab's CI/CD Regular Expression Compiler and results from insufficient validation of specially crafted regular expressions. Successful exploitation could compromise the confidentiality, integrity, and availability of a GitLab environment without requiring authentication or user interaction.&lt;/cite&gt; &lt;cite index="54-4"&gt;Rapid7 reproduced code execution under specific prerequisites; no exploitation has been reported.&lt;/cite&gt; [1]</p>
+
+      <h2>FBI seizes Chinese state-linked hacking tools targeting critical infrastructure</h2>
+      <p>&lt;cite index="55-5,55-6"&gt;The Justice Department and FBI announced on October 8, 2026 that they had seized two hacking tools connected to the Chinese government-linked group Flax Typhoon. The domain name seizures were meant to deny hackers access to the vulnerability scanning tool Microscan and the spearphishing tool FishHub created by the Chinese firm Integrity Technology Group.&lt;/cite&gt; &lt;cite index="58-5,58-6"&gt;Targets include a South Carolina power company, airports in Japan and Poland, Taiwanese natural gas and electricity companies, and universities. The affidavit confirms that scanning activity led to successful breaches, including at two Taiwanese universities whose networks were scanned using MicroScan in August 2022 and March 2023 and subsequently breached.&lt;/cite&gt; [2]</p>
+
+      <h2>Microsoft October Patch Tuesday fixes 1,413 vulnerabilities including one actively exploited zero-day</h2>
+      <p>&lt;cite index="29-1"&gt;Microsoft addressed 1,413 vulnerabilities in its October 2026 security update release, including one exploited zero-day vulnerability, two publicly disclosed zero-day vulnerabilities, and 75 Critical vulnerabilities.&lt;/cite&gt; &lt;cite index="32-3,32-4"&gt;CISA added two new vulnerabilities to its Known Exploited Vulnerabilities Catalog on October 13, 2026: CVE-2026-96951 Microsoft Windows Command Injection Vulnerability and CVE-2026-104935 Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability.&lt;/cite&gt; &lt;cite index="34-1"&gt;Monthly CVE disclosures have grown in volume by 145% over two years according to one analysis from Echo, from 3,173 in June 2024 to 7,765 in June 2026.&lt;/cite&gt; [3]</p>
+
+      <h2>French supermarket hack exploits refrigeration controllers, spoils food across hundreds of stores</h2>
+      <p>&lt;cite index="42-7,42-8"&gt;Hackers targeted hundreds of French supermarkets in a cyberattack that reportedly caused refrigerators and freezers to overheat, spoiling food and sparking fires. Fridges at French supermarket chains Carrefour, Monoprix, the Les Mousquetaires-owned Intermarché, and Coopérative U saw fridges heat up to as much as 50 degrees Celsius (122 degrees Fahrenheit) overnight.&lt;/cite&gt; &lt;cite index="43-4,43-5"&gt;The attackers reached them through the controller that runs all of a store's fridges and freezers, a device made by Danish company Danfoss that maintenance firms can manage remotely. Les Mousquetaires said its fridges and freezers were put into defrost and heated to as much as 50°C.&lt;/cite&gt; [4]</p>
+
+      <h2>Japan declares first cyberspace emergency after wave of AI-driven attacks</h2>
+      <p>&lt;cite index="9-1"&gt;Japan's top cybersecurity body declared its first cyberspace emergency on October 9, 2026, after AI-driven ransomware compromised 14 million citizens' records and an IDC Frontier cloud-provider breach cascaded through 495 organizations at once.&lt;/cite&gt; &lt;cite index="9-3,9-4"&gt;A ransomware attack on IDC Frontier — a major domestic cloud provider owned by SoftBank — encrypted servers in the early hours of October 8, cascading through 495 client organizations. Among the most prominent victims: Japan's largest railway operator, JR East, and its affiliated credit-card subsidiary View Card, which confirmed that up to 6.09 million records may have been accessed.&lt;/cite&gt; [5]</p>
+
+      <div class="sources">
+        <span class="label">Sources</span>
+        [1] SOC Prime &mdash; <a href="https://socprime.com/blog/cve-2026-97229-critical-gitlab-rce-vulnerability/" target="_blank" rel="noopener">https://socprime.com/blog/cve-2026-97229-critical-gitlab-rce-vulnerability/</a><br>
+        [2] Cyberscoop &mdash; <a href="https://cyberscoop.com/doj-fbi-seize-flax-typhoon-hacking-tools-microscan-fishhub/" target="_blank" rel="noopener">https://cyberscoop.com/doj-fbi-seize-flax-typhoon-hacking-tools-microscan-fishhub/</a><br>
+        [3] CrowdStrike &mdash; <a href="https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-october-2026/" target="_blank" rel="noopener">https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-october-2026/</a><br>
+        [4] CNBC &mdash; <a href="https://www.cnbc.com/2026/10/13/france-supermarket-hack-cyberattack-fridges-fires.html" target="_blank" rel="noopener">https://www.cnbc.com/2026/10/13/france-supermarket-hack-cyberattack-fridges-fires.html</a><br>
+        [5] Tech Times &mdash; <a href="https://techtimes.com/articles/328908/20261012/japan-declares-first-cyberspace-emergency-ai-turns-ransomware-carpet-bombing.htm" target="_blank" rel="noopener">https://techtimes.com/articles/328908/20261012/japan-declares-first-cyberspace-emergency-ai-turns-ransomware-carpet-bombing.htm</a><br>
+        
+      </div>
+    </article>
+    <a class="back-link" href="./">&larr; All daily briefs</a>
+  </main>
+</body>
+</html>
