@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SonicWall VPN bypass exploited, DigiCert breach confirmed, fridge hacks hit critical infrastructure — Cyber Defense Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f3f4f2; --line:#d3d6cf; --navy:#0d1f3c; --navy-2:#152c52;
+    --navy-3:#22406f; --ink:#1c2534; --muted:#5b6478; --stamp:#9c2b26;
+    --ai-accent:#8a6a1f; --ai-bg:#fbf3df; --white:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;}
+  a{color:var(--navy-3);}
+  .letterhead{background:linear-gradient(180deg,var(--navy-2),var(--navy));color:var(--white);padding:28px 20px;text-align:center;border-bottom:3px solid var(--navy-3);}
+  .letterhead .brand{font-family:'Source Serif 4',serif;font-weight:700;font-size:19px;}
+  .letterhead .brand .dim{color:rgba(255,255,255,0.55);font-weight:500;}
+  .letterhead .handle{margin-top:4px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);}
+  main{max-width:680px;margin:0 auto;padding:44px 20px 70px;}
+  .meta-row{display:flex;justify-content:space-between;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+  .meta-row .case{color:var(--navy-3);font-weight:600;}
+  .ai-badge{display:inline-flex;align-items:center;gap:8px;background:var(--ai-bg);border:1px solid var(--ai-accent);color:var(--ai-accent);font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;margin-bottom:24px;}
+  h1{font-family:'Source Serif 4',serif;font-weight:700;font-size:clamp(26px,4.5vw,36px);line-height:1.2;color:var(--navy);margin-bottom:10px;}
+  .dek{font-size:16.5px;color:var(--muted);line-height:1.55;margin-bottom:30px;}
+  article{font-size:16.5px;line-height:1.72;color:var(--ink);}
+  article h2{font-family:'Source Serif 4',serif;font-weight:600;font-size:21px;color:var(--navy);margin:34px 0 12px;padding-top:22px;border-top:1px solid var(--line);}
+  article p{margin-bottom:18px;}
+  .sources{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);line-height:1.9;}
+  .sources .label{display:block;color:var(--navy-3);font-weight:600;margin-bottom:8px;letter-spacing:0.06em;}
+  .back-link{display:block;margin-top:40px;font-family:'IBM Plex Mono',monospace;font-size:12px;}
+</style>
+</head>
+<body>
+  <header class="letterhead">
+    <div class="brand">Cyber Defense <span class="dim">Daily</span></div>
+    <div class="handle">@cyber.defense.daily</div>
+  </header>
+  <main>
+    <div class="meta-row">
+      <span class="case">CDD-DAILY-0015</span>
+      <span>November 08, 2026</span>
+    </div>
+    <div class="ai-badge">&#9679; AI-Generated &middot; Human-Reviewed</div>
+    <h1>SonicWall VPN bypass exploited, DigiCert breach confirmed, fridge hacks hit critical infrastructure</h1>
+    <p class="dek">Attackers target authentication flaws and industrial systems while certificate authority discloses migration error</p>
+    <article>
+      
+      <h2>SonicWall VPN flaw under active exploitation, CISA confirms</h2>
+      <p>CISA added CVE-2026-19868 to its Known Exploited Vulnerabilities catalog on November 6 after SonicWall confirmed attackers are exploiting an authentication bypass in SonicOS SSL VPN. The flaw allows users with valid credentials for alternate login methods to bypass SAML authentication and multi-factor authentication protections. Federal agencies must patch by November 20; no workarounds exist. [1]</p>
+
+      <h2>DigiCert breach exposed customer identity documents for over a year</h2>
+      <p>Certificate authority DigiCert disclosed a data breach affecting customer passports, driver's licenses, and business contact information after a February 2025 server migration left an internal system exposed to the internet. Unauthorized access occurred between June 27 and July 2, 2026, but the company initially misclassified the incident as an account-creation issue when it detected suspicious activity in June. DigiCert says its certificate authority services and issued certificates were not affected. [2]</p>
+
+      <h2>Hackers target industrial refrigeration systems across food and healthcare sectors</h2>
+      <p>US agencies including CISA, FBI, and HHS issued a joint warning on November 5 about ongoing attacks on internet-connected refrigeration systems in grocery stores, cold storage facilities, U.S. military bases, and at least one blood bank. Attackers exploited authentication bypasses to force units into heating or defrost modes while hiding temperature alerts from operators. Security researchers have attributed European attacks to Iran, while some suspect Russia in grocery store attacks. [3]</p>
+
+      <h2>OpenSSH authentication bypass exploited hours after disclosure</h2>
+      <p>Threat actors gained root access on an Alpine Linux honeypot within hours of CVE-2026-123158 disclosure on November 6. The SSHole vulnerability affects Linux systems running OpenSSH on musl C library without PAM, allowing unauthenticated attackers to access password-disabled accounts using oversized passwords between 257 and 1,024 characters. OpenSSH 10.6p2 fixes the flaw. [4]</p>
+
+      <div class="sources">
+        <span class="label">Sources</span>
+        [1] SecurityWeek &mdash; <a href="https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/" target="_blank" rel="noopener">https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/</a><br>
+        [2] BleepingComputer &mdash; <a href="https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents/" target="_blank" rel="noopener">https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents/</a><br>
+        [3] TechCrunch &mdash; <a href="https://techcrunch.com/2026/11/05/u-s-government-warns-of-ongoing-cyber-threat-amid-mass-hacks-of-industrial-retail-and-military-freezers/" target="_blank" rel="noopener">https://techcrunch.com/2026/11/05/u-s-government-warns-of-ongoing-cyber-threat-amid-mass-hacks-of-industrial-retail-and-military-freezers/</a><br>
+        [4] The Hacker News &mdash; <a href="https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html" target="_blank" rel="noopener">https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html</a><br>
+        
+      </div>
+    </article>
+    <a class="back-link" href="./">&larr; All daily briefs</a>
+  </main>
+</body>
+</html>
