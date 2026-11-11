@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microsoft Patches Exploited Outlook Zero-Day, N-able Goes Offline After 30+ Flaws Published — Cyber Defense Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f3f4f2; --line:#d3d6cf; --navy:#0d1f3c; --navy-2:#152c52;
+    --navy-3:#22406f; --ink:#1c2534; --muted:#5b6478; --stamp:#9c2b26;
+    --ai-accent:#8a6a1f; --ai-bg:#fbf3df; --white:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;}
+  a{color:var(--navy-3);}
+  .letterhead{background:linear-gradient(180deg,var(--navy-2),var(--navy));color:var(--white);padding:28px 20px;text-align:center;border-bottom:3px solid var(--navy-3);}
+  .letterhead .brand{font-family:'Source Serif 4',serif;font-weight:700;font-size:19px;}
+  .letterhead .brand .dim{color:rgba(255,255,255,0.55);font-weight:500;}
+  .letterhead .handle{margin-top:4px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);}
+  main{max-width:680px;margin:0 auto;padding:44px 20px 70px;}
+  .meta-row{display:flex;justify-content:space-between;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+  .meta-row .case{color:var(--navy-3);font-weight:600;}
+  .ai-badge{display:inline-flex;align-items:center;gap:8px;background:var(--ai-bg);border:1px solid var(--ai-accent);color:var(--ai-accent);font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;margin-bottom:24px;}
+  h1{font-family:'Source Serif 4',serif;font-weight:700;font-size:clamp(26px,4.5vw,36px);line-height:1.2;color:var(--navy);margin-bottom:10px;}
+  .dek{font-size:16.5px;color:var(--muted);line-height:1.55;margin-bottom:30px;}
+  article{font-size:16.5px;line-height:1.72;color:var(--ink);}
+  article h2{font-family:'Source Serif 4',serif;font-weight:600;font-size:21px;color:var(--navy);margin:34px 0 12px;padding-top:22px;border-top:1px solid var(--line);}
+  article p{margin-bottom:18px;}
+  .sources{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);line-height:1.9;}
+  .sources .label{display:block;color:var(--navy-3);font-weight:600;margin-bottom:8px;letter-spacing:0.06em;}
+  .back-link{display:block;margin-top:40px;font-family:'IBM Plex Mono',monospace;font-size:12px;}
+</style>
+</head>
+<body>
+  <header class="letterhead">
+    <div class="brand">Cyber Defense <span class="dim">Daily</span></div>
+    <div class="handle">@cyber.defense.daily</div>
+  </header>
+  <main>
+    <div class="meta-row">
+      <span class="case">CDD-DAILY-0015</span>
+      <span>November 11, 2026</span>
+    </div>
+    <div class="ai-badge">&#9679; AI-Generated &middot; Human-Reviewed</div>
+    <h1>Microsoft Patches Exploited Outlook Zero-Day, N-able Goes Offline After 30+ Flaws Published</h1>
+    <p class="dek">Active exploitation dominates November patch cycles and emergency vendor responses</p>
+    <article>
+      
+      <h2>Microsoft Patches Exploited Outlook Zero-Day in November Patch Tuesday</h2>
+      <p>Microsoft patched 1,093 CVEs in its November 2026 Patch Tuesday release, including CVE-2026-124194, a Microsoft Outlook spoofing vulnerability actively exploited to steal Windows authentication hashes. The zero-day was patched November 10 and Microsoft confirmed exploitation before public disclosure. The release also included 63 critical vulnerabilities, with notable RCE flaws in Exchange Server, SharePoint Server, and Windows components. [1]</p>
+
+      <h2>N-able Takes N-central Offline After Researcher Drops 30+ Zero-Days</h2>
+      <p>N-able pulled its hosted N-central remote monitoring platform offline globally after security researcher Sean Bales published proof-of-concept exploits for more than 30 alleged zero-day vulnerabilities on November 8, giving the company no advance notice. N-able released a hotfix on November 10 addressing seven CVEs and confirmed all hosted servers had been upgraded by November 11. The company reported increased scanning activity but no confirmed customer compromises as of November 10. [2]</p>
+
+      <h2>Attackers Exploit Barracuda Email Gateway Flaws for Root Access</h2>
+      <p>Barracuda confirmed on November 9 that attackers are exploiting two recently patched vulnerabilities—CVE-2026-116606 and CVE-2026-111560—that can be chained to bypass authorization and gain root access to Email Security Gateway appliances. CISA added both flaws to its Known Exploited Vulnerabilities catalog on November 10 with a November 13 federal deadline. Cybersecurity firm Previdian observed 17 exploitation attempts between November 9 and 11. [3]</p>
+
+      <h2>Ivanti Patches Critical SQL Injection Allowing Unauthenticated RCE</h2>
+      <p>Ivanti released security updates on November 10 for 13 vulnerabilities across five products, including CVE-2026-121653, a critical CVSS 9.8 SQL injection flaw in Endpoint Manager that allows unauthenticated remote code execution. A second critical flaw, CVE-2026-121683, affects Cloud Services Application version 5.0.8. Ivanti stated it was not aware of exploitation before disclosure and the issues were reported through its responsible disclosure program. [4]</p>
+
+      <h2>NSA and Cyber Command Face Scrutiny After String of Suicides</h2>
+      <p>At least 11 workers at the National Security Agency and US Cyber Command have died by suicide in the past year, drawing scrutiny from military officials and lawmakers. The mental toll of toggling between civilian lives and digital warfighting operations is among the challenges being examined. Both agencies conduct electronic spying and hacking operations against US adversaries from Fort Meade in Maryland. [5]</p>
+
+      <div class="sources">
+        <span class="label">Sources</span>
+        [1] Tenable &mdash; <a href="https://www.tenable.com/blog/microsoft-november-2026-patch-tuesday-addresses-1093-cves-cve-2026-124194" target="_blank" rel="noopener">https://www.tenable.com/blog/microsoft-november-2026-patch-tuesday-addresses-1093-cves-cve-2026-124194</a><br>
+        [2] Tenable &mdash; <a href="https://www.tenable.com/blog/able2shell-frequently-asked-questions-for-reported-n-able-n-central-zero-day-vulnerabilities" target="_blank" rel="noopener">https://www.tenable.com/blog/able2shell-frequently-asked-questions-for-reported-n-able-n-central-zero-day-vulnerabilities</a><br>
+        [3] SecurityWeek &mdash; <a href="https://www.securityweek.com/recently-patched-barracuda-vulnerabilities-exploited-in-attacks/" target="_blank" rel="noopener">https://www.securityweek.com/recently-patched-barracuda-vulnerabilities-exploited-in-attacks/</a><br>
+        [4] Security Online &mdash; <a href="https://securityonline.info/ivanti-security-advisories-november-2026/" target="_blank" rel="noopener">https://securityonline.info/ivanti-security-advisories-november-2026/</a><br>
+        [5] Bloomberg &mdash; <a href="https://bloomberg.com/news/newsletters/2026-11-11/us-military-congress-focus-on-toll-of-cyber-jobs-following-suicides" target="_blank" rel="noopener">https://bloomberg.com/news/newsletters/2026-11-11/us-military-congress-focus-on-toll-of-cyber-jobs-following-suicides</a><br>
+        
+      </div>
+    </article>
+    <a class="back-link" href="./">&larr; All daily briefs</a>
+  </main>
+</body>
+</html>
