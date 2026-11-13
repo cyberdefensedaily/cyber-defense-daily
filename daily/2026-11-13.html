@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barracuda Flaws Under Active Exploit; Microsoft Patches 1,095 CVEs — Cyber Defense Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f3f4f2; --line:#d3d6cf; --navy:#0d1f3c; --navy-2:#152c52;
+    --navy-3:#22406f; --ink:#1c2534; --muted:#5b6478; --stamp:#9c2b26;
+    --ai-accent:#8a6a1f; --ai-bg:#fbf3df; --white:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;}
+  a{color:var(--navy-3);}
+  .letterhead{background:linear-gradient(180deg,var(--navy-2),var(--navy));color:var(--white);padding:28px 20px;text-align:center;border-bottom:3px solid var(--navy-3);}
+  .letterhead .brand{font-family:'Source Serif 4',serif;font-weight:700;font-size:19px;}
+  .letterhead .brand .dim{color:rgba(255,255,255,0.55);font-weight:500;}
+  .letterhead .handle{margin-top:4px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);}
+  main{max-width:680px;margin:0 auto;padding:44px 20px 70px;}
+  .meta-row{display:flex;justify-content:space-between;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+  .meta-row .case{color:var(--navy-3);font-weight:600;}
+  .ai-badge{display:inline-flex;align-items:center;gap:8px;background:var(--ai-bg);border:1px solid var(--ai-accent);color:var(--ai-accent);font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;margin-bottom:24px;}
+  h1{font-family:'Source Serif 4',serif;font-weight:700;font-size:clamp(26px,4.5vw,36px);line-height:1.2;color:var(--navy);margin-bottom:10px;}
+  .dek{font-size:16.5px;color:var(--muted);line-height:1.55;margin-bottom:30px;}
+  article{font-size:16.5px;line-height:1.72;color:var(--ink);}
+  article h2{font-family:'Source Serif 4',serif;font-weight:600;font-size:21px;color:var(--navy);margin:34px 0 12px;padding-top:22px;border-top:1px solid var(--line);}
+  article p{margin-bottom:18px;}
+  .sources{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);line-height:1.9;}
+  .sources .label{display:block;color:var(--navy-3);font-weight:600;margin-bottom:8px;letter-spacing:0.06em;}
+  .back-link{display:block;margin-top:40px;font-family:'IBM Plex Mono',monospace;font-size:12px;}
+</style>
+</head>
+<body>
+  <header class="letterhead">
+    <div class="brand">Cyber Defense <span class="dim">Daily</span></div>
+    <div class="handle">@cyber.defense.daily</div>
+  </header>
+  <main>
+    <div class="meta-row">
+      <span class="case">CDD-DAILY-0015</span>
+      <span>November 13, 2026</span>
+    </div>
+    <div class="ai-badge">&#9679; AI-Generated &middot; Human-Reviewed</div>
+    <h1>Barracuda Flaws Under Active Exploit; Microsoft Patches 1,095 CVEs</h1>
+    <p class="dek">Critical email gateway chain confirmed exploited, massive Patch Tuesday addressed zero-day, shipping giant confirms breach</p>
+    <article>
+      
+      <h2>Barracuda Email Gateway Vulnerabilities Exploited in the Wild</h2>
+      <p>CISA added two Barracuda Email Security Gateway flaws to its Known Exploited Vulnerabilities catalog on November 10, with a November 13 federal deadline. CVE-2026-116606 (authentication bypass) chains with CVE-2026-111560 (command injection) to give unauthenticated attackers root access. Barracuda confirmed attacks on a small number of organizations, and researchers observed 17 exploitation attempts between November 9 and November 11. [1]</p>
+
+      <h2>Microsoft November Patch Tuesday Addresses Over 1,000 Flaws, One Exploited</h2>
+      <p>Microsoft's November 10 Patch Tuesday addressed 1,095 vulnerabilities across Windows, Office, Azure, and other products, including 64 rated Critical. CVE-2026-124194, an Outlook zero-day allowing attackers to steal NTLMv2 authentication hashes, is actively exploited in the wild despite its Moderate severity rating. The vulnerability bypasses Outlook's external-content warning when a crafted message file is opened. [2]</p>
+
+      <h2>Maersk Confirms Data Breach as Ransomware Group Demands $5 Million</h2>
+      <p>Shipping giant Maersk confirmed on November 11 that threat actors extracted data from a legacy system inherited through an earlier acquisition. The WhiteArmor ransomware group listed Maersk on its leak site on November 7, claiming to have stolen 100GB of logistics data and demanding $5 million. Maersk says the incident is isolated to a local system with no indication of impact on other systems or customer data. [3]</p>
+
+      <h2>CISA Circulates Internal Framework for Rapid Threat Assessment</h2>
+      <p>The Cybersecurity and Infrastructure Security Agency circulated an internal framework on November 5 designed to help senior officials assess major cybersecurity threats and act before they escalate into crises. The unclassified guidance outlines six operational focus areas including assessing national risk, defending against major cyber threats, and preparing for serious incidents. Acting Director Nick Andersen's email aimed to help officials cut through noise and distinguish mission-critical information. [4]</p>
+
+      <div class="sources">
+        <span class="label">Sources</span>
+        [1] SecurityWeek &mdash; <a href="https://www.securityweek.com/recently-patched-barracuda-vulnerabilities-exploited-in-attacks/" target="_blank" rel="noopener">https://www.securityweek.com/recently-patched-barracuda-vulnerabilities-exploited-in-attacks/</a><br>
+        [2] Qualys &mdash; <a href="https://blog.qualys.com/product-tech/2026/11/13/november-patch-tuesday-how-to-sort-through-the-patches" target="_blank" rel="noopener">https://blog.qualys.com/product-tech/2026/11/13/november-patch-tuesday-how-to-sort-through-the-patches</a><br>
+        [3] SecurityWeek &mdash; <a href="https://securityweek.com/maersk-confirms-data-theft-amid-5-million-extortion-attempt" target="_blank" rel="noopener">https://securityweek.com/maersk-confirms-data-theft-amid-5-million-extortion-attempt</a><br>
+        [4] Nextgov/FCW &mdash; <a href="https://www.nextgov.com/cybersecurity/2026/11/cisa-outlines-internal-plan-swiftly-address-cyber-infrastructure-threats/417167/" target="_blank" rel="noopener">https://www.nextgov.com/cybersecurity/2026/11/cisa-outlines-internal-plan-swiftly-address-cyber-infrastructure-threats/417167/</a><br>
+        
+      </div>
+    </article>
+    <a class="back-link" href="./">&larr; All daily briefs</a>
+  </main>
+</body>
+</html>
