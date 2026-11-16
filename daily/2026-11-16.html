@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check Point gateways exploited, Apache patches critical HTTP/2 flaw, TSMC breach confirmed — Cyber Defense Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f3f4f2; --line:#d3d6cf; --navy:#0d1f3c; --navy-2:#152c52;
+    --navy-3:#22406f; --ink:#1c2534; --muted:#5b6478; --stamp:#9c2b26;
+    --ai-accent:#8a6a1f; --ai-bg:#fbf3df; --white:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;}
+  a{color:var(--navy-3);}
+  .letterhead{background:linear-gradient(180deg,var(--navy-2),var(--navy));color:var(--white);padding:28px 20px;text-align:center;border-bottom:3px solid var(--navy-3);}
+  .letterhead .brand{font-family:'Source Serif 4',serif;font-weight:700;font-size:19px;}
+  .letterhead .brand .dim{color:rgba(255,255,255,0.55);font-weight:500;}
+  .letterhead .handle{margin-top:4px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);}
+  main{max-width:680px;margin:0 auto;padding:44px 20px 70px;}
+  .meta-row{display:flex;justify-content:space-between;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+  .meta-row .case{color:var(--navy-3);font-weight:600;}
+  .ai-badge{display:inline-flex;align-items:center;gap:8px;background:var(--ai-bg);border:1px solid var(--ai-accent);color:var(--ai-accent);font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;margin-bottom:24px;}
+  h1{font-family:'Source Serif 4',serif;font-weight:700;font-size:clamp(26px,4.5vw,36px);line-height:1.2;color:var(--navy);margin-bottom:10px;}
+  .dek{font-size:16.5px;color:var(--muted);line-height:1.55;margin-bottom:30px;}
+  article{font-size:16.5px;line-height:1.72;color:var(--ink);}
+  article h2{font-family:'Source Serif 4',serif;font-weight:600;font-size:21px;color:var(--navy);margin:34px 0 12px;padding-top:22px;border-top:1px solid var(--line);}
+  article p{margin-bottom:18px;}
+  .sources{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);line-height:1.9;}
+  .sources .label{display:block;color:var(--navy-3);font-weight:600;margin-bottom:8px;letter-spacing:0.06em;}
+  .back-link{display:block;margin-top:40px;font-family:'IBM Plex Mono',monospace;font-size:12px;}
+</style>
+</head>
+<body>
+  <header class="letterhead">
+    <div class="brand">Cyber Defense <span class="dim">Daily</span></div>
+    <div class="handle">@cyber.defense.daily</div>
+  </header>
+  <main>
+    <div class="meta-row">
+      <span class="case">CDD-DAILY-0015</span>
+      <span>November 16, 2026</span>
+    </div>
+    <div class="ai-badge">&#9679; AI-Generated &middot; Human-Reviewed</div>
+    <h1>Check Point gateways exploited, Apache patches critical HTTP/2 flaw, TSMC breach confirmed</h1>
+    <p class="dek">Destructive attacks chain vulnerabilities while critical patches arrive for widely deployed infrastructure.</p>
+    <article>
+      
+      <h2>Attackers chain Check Point flaws to deploy wiper on ESXi hosts</h2>
+      <p>Check Point disclosed that threat actors exploited PHP2Shell alongside CVE-2026-123039, a privilege escalation flaw in Gaia OS, to compromise unpatched Security Gateways between October 30 and November 4. Attackers escalated to root, deployed backdoors, and in some cases pivoted to VMware ESXi hosts to run a wiper. CISA added CVE-2026-123039 to its Known Exploited Vulnerabilities catalog on November 13 with a November 16 remediation deadline for federal agencies. [1]</p>
+
+      <h2>Apache patches critical mod_http2 race condition enabling remote code execution</h2>
+      <p>Apache released HTTP Server 2.4.71 on November 11 to fix CVE-2026-119618, a critical race condition in the mod_http2 module that can lead to remote code execution. The flaw affects versions 2.4.55 through 2.4.70 and can be exploited without authentication by any client able to connect to servers with HTTP/2 enabled. Anthropic's OSS Scanner discovered the vulnerability and reported it October 26; Google researchers independently reported it November 3. [2]</p>
+
+      <h2>TSMC confirms cloud provider breach exposing employee data</h2>
+      <p>Taiwan Semiconductor Manufacturing Company confirmed a data breach at an unnamed cloud provider that exposed information about current and former employees. A threat actor advertised 6.9 GB of allegedly stolen employee data on a cybercrime forum. The breach adds to a wave of November incidents affecting Asia-Pacific infrastructure. [3]</p>
+
+      <h2>German hospital's emergency room closed after cyberattack</h2>
+      <p>Kreiskrankenhaus Greiz-Ronneburg in Thuringia discovered unauthorized access to its IT systems on November 15, forcing closure of the emergency room at its Greiz site. The hospital treats approximately 11,000 inpatients and 23,000 outpatients annually. Authorities have not yet characterized the attack as ransomware, and no ransom demand has been publicly disclosed. [4]</p>
+
+      <div class="sources">
+        <span class="label">Sources</span>
+        [1] Check Point Research &mdash; <a href="https://research.checkpoint.com/2026/php2shell-exploitation-on-check-point-gateway/" target="_blank" rel="noopener">https://research.checkpoint.com/2026/php2shell-exploitation-on-check-point-gateway/</a><br>
+        [2] F5 Labs &mdash; <a href="https://www.f5.com/labs/articles/cve-2026-119618" target="_blank" rel="noopener">https://www.f5.com/labs/articles/cve-2026-119618</a><br>
+        [3] Check Point Threat Intelligence &mdash; <a href="https://research.checkpoint.com/2026/16th-november-threat-intelligence-report/" target="_blank" rel="noopener">https://research.checkpoint.com/2026/16th-november-threat-intelligence-report/</a><br>
+        [4] Pasquale Pillitteri &mdash; <a href="https://pasqualepillitteri.it/en/news/34131/hacker-attack-greiz-hospital-emergency-room-closed" target="_blank" rel="noopener">https://pasqualepillitteri.it/en/news/34131/hacker-attack-greiz-hospital-emergency-room-closed</a><br>
+        
+      </div>
+    </article>
+    <a class="back-link" href="./">&larr; All daily briefs</a>
+  </main>
+</body>
+</html>
